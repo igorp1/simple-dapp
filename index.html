@@ -1,1 +1,74 @@
-🦖 Hello world
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>-- --- --</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+			body{
+			    padding :  1em;
+			    text-align: center;
+			    background-color: #EBEBEB;
+			    font-family: 'Ubuntu Mono', monospace;
+			}
+			.card{
+				padding: 1em;
+				background-color: white;
+				border-radius: .2em;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
+			}
+			.card h3{
+				margin: 0;
+				margin-bottom: .5em
+			}
+			button{
+				font-family: 'Ubuntu Mono', monospace;
+				font-size: 1em;
+			}
+			pre{
+				text-align:left; 
+				border: 1px solid #DBDBDB; 
+				border-radius: .2em;
+				padding: .5em;
+			}
+			input{
+				padding: .3em;
+				font-family: 'Ubuntu Mono', monospace;
+				font-size: 1em;
+			}
+			.action{
+				margin-top: .5em;
+				margin-bottom: .5em; 
+			}
+		</style>
+    </head>
+
+    <body class="item">
+		
+		<div class="card item">
+			<h3>🛰 Ɖapp demo</h3> 
+			<div style="text-align:left">
+
+				Current number value
+				<pre id="output">loading...<br></pre>
+
+				<div class="action">
+					Set number to: <input type="number" id="set-input" placeholder="input"> <button id="set-btn">RUN</button>
+				</div>
+				<div class="action">
+					Add to number: <input type="number" id="add-input" placeholder="input"> <button id="add-btn">RUN</button>
+				</div>
+				<div class="action">
+					Increment number <button id="inc-btn">RUN</button>
+				</div>
+				<div class="action">
+					Reset number <button id="res-btn">RUN</button>
+				</div>
+				
+			</div>
+		</div>
+    </body>
+
+</html>
+
+<script src="./dist/app.bundle.js"></script>
