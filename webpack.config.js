@@ -6,7 +6,7 @@ module.exports = {
 	},
 	module: {
 		loaders: [{
-			exclude: '/node_modules/',
+			exclude: ['/node_modules/', '/contract/'],
 			loader: 'babel-loader',
 			query: {
 				presets: ['es2015']
